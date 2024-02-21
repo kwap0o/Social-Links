@@ -1,0 +1,88 @@
+.attribution {
+    font-size: 11px; text-align: center; 
+    color: white;
+    margin-top: 40px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    background-color: rgb(0, 0, 0,1);
+    padding: 0;
+    margin: 0;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    height: 700px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 14px;
+}
+.picture img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.name{
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+}
+.name span{
+    color: rgb(198, 228, 66);
+}
+.description{
+    font-size: 18px;
+    color: rgb(182, 179, 179);
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+.buttons button{
+    background-color: rgb(50,50,50);
+    height: 50px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: none;
+    transition:  all ease-in-out 0.5s;
+    color: white;
+}
+.buttons button:hover{
+    background-color: rgb(198, 228, 66);
+    color: black;
+}
+@media screen and (max-width: 400px) {
+    .main-box{
+        width: 80%;
+    }
+}
+@media screen and (max-height: 400px) {
+    main{
+        height: 100vh;
+        
+    }
+    .main-box{
+        flex-direction: row;
+        height: fit-content;
+        width: 90%;
+        padding: 25px;
+        gap: 15px;
+    }
+}
+
